@@ -90,7 +90,7 @@ ggplot(weather_df, aes(x = tmin, y = tmax)) +
 
     ## Warning: Removed 15 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 New approach, same plot.
 
@@ -103,7 +103,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 Save and edit a plot object.
 
@@ -117,7 +117,7 @@ weather_plot + geom_point()
 
     ## Warning: Removed 15 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ## Advanced scatterplot …
 
@@ -136,7 +136,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 What about the aes placement … ?
 
@@ -153,7 +153,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 In above code, because color was defined only for the points, geom
 smooth applied one line.
@@ -174,7 +174,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 Can also have alpha = tmin to create transparency towards lower values
 of tmin and less transparency towards higher values of tmin.
@@ -195,7 +195,7 @@ weather_df %>%
 
     ## Warning: Removed 3 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 ## Some small notes
 
@@ -213,7 +213,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing non-finite values (stat_smooth).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 You can use a neat geom\!
 
@@ -225,7 +225,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing non-finite values (stat_binhex).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 ``` r
 weather_df %>% 
@@ -238,7 +238,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ## Univariate plots
 
@@ -254,7 +254,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing non-finite values (stat_bin).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
 
 Can we add color … ?
 
@@ -269,7 +269,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing non-finite values (stat_bin).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 Let’s try a new geometry\!
 
@@ -281,7 +281,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing non-finite values (stat_density).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 What about boxplots??
 
@@ -293,7 +293,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing non-finite values (stat_boxplot).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 Trendy plots\!
 
@@ -310,7 +310,7 @@ weather_df %>%
 
     ## Warning: Removed 3 rows containing missing values (geom_segment).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 Ridge plots – the most popular plot of 2017.
 
@@ -324,7 +324,7 @@ weather_df %>%
 
     ## Warning: Removed 15 rows containing non-finite values (stat_density_ridges).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 ## Save and embed
 
@@ -349,7 +349,9 @@ weather_plot
 
     ## Warning: Removed 15 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+
+Embed at different size.
 
 ``` r
 weather_plot
@@ -357,4 +359,4 @@ weather_plot
 
     ## Warning: Removed 15 rows containing missing values (geom_point).
 
-![](viz_i_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+![](viz_1_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
